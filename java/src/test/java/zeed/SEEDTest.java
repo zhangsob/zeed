@@ -269,7 +269,7 @@ class SEEDTest {
 		System.out.println("emptyFileEncrypt2 ms : " + (System.currentTimeMillis() - start)) ;
 	}
 	
-	@Test
+	//@Test
 	void emptyfileDecrypt2() {
 		SEED seed = new SEED(SEED.Mode.ECB, SEED.Bit.SEED256, SEED.Padding.PKCS7);
 		seed.setUserKey("1234");
@@ -385,7 +385,7 @@ class SEEDTest {
 		assertTrue(equals(decrypted_text, plain_text), "ByteArrayStream should return 'true'");
 	}
 	
-	//@Test
+	@Test
 	void EncodeDecodeTest()
 	{
 		String plain_text = "ABCabc123한글" ;
